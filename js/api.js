@@ -2,7 +2,7 @@
 let hero = document.getElementById('hero-slides');
 let menu = document.getElementById('menu');
 let slides = document.getElementById('slides');
-let dribbble = document.getElementById('dribbble');
+let getmoree = document.getElementById('getmoree');
 let next = [ 'next', 'next-catch' ].map(n => document.getElementById(n));
 let prev = [ 'prev', 'prev-catch' ].map(n => document.getElementById(n));
 let slideChildren = slides.children;
@@ -54,7 +54,7 @@ async function demo() {
 	hoverSlide(slideSeq[0]);
 	await sleep(1200);
 	goToPage(pageSeq[1]);
-	dribbble.classList.add('hover');
+	getmoree.classList.add('hover');
 	unhoverSlide(slideSeq[0]);
 	await sleep(500);
 	hoverSlide(slideSeq[1]);
@@ -66,7 +66,7 @@ async function demo() {
 	await sleep(1600);
 	goToPage(0);
 	unhoverSlide(slideSeq[2]);
-	dribbble.classList.remove('hover');
+	getmoree.classList.remove('hover');
 	currentlyDemoing = false;
 }
 
