@@ -9,6 +9,10 @@ body {
 }
 img{
   width: 100%;
+  height: 100%;
+  background: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -180,7 +184,7 @@ a {
   display: inline-block;
   vertical-align: top;
   font-size: 1.5vw;
-  width: 24em;
+  width: 25em;
   height: var(--slides-height);
   margin: 0 1.333em;
   background-image: -webkit-gradient(180deg,rgba(51,167,181,1) 0%,rgba(51,167,181,1) 43%,rgba(51, 167, 181, 0.35) 100%);
